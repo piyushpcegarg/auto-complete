@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS employees;
+
+CREATE TABLE employees (
+  id   INTEGER IDENTITY PRIMARY KEY,
+  name VARCHAR(80)
+);
