@@ -22,6 +22,8 @@ Verify whether image has successfully built by below command:
 docker images | grep search-frontend
 ```
 
+**Note: Before running frontend service, make sure backend service is up and running**
+
 Now to run this service execute below command:
 
 ```
@@ -35,3 +37,5 @@ http://localhost:3000
 ```
 
 You should get below response
+
+![auto-complete](auto-complete.png)
