@@ -14,7 +14,7 @@ cd search-service
 ./gradlew bootBuildImage
 ```
 
-Above command builts image 'docker.io/library/search-service:0.0.1-SNAPSHOT'
+Above command builts image 'docker.io/library/search-service:1.0.0'
 
 Verify whether image has successfully built by below command:
 
@@ -25,7 +25,7 @@ docker images | grep search-service
 Now to run this service execute below command:
 
 ```
-docker run -d -p 8080:8080 --name search-service search-service:0.0.1-SNAPSHOT
+docker run -d -p 8080:8080 --name search-service search-service:1.0.0
 ```
 
 To verify service is working properly execute below url in browser
