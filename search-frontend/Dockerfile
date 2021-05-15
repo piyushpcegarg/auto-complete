@@ -6,14 +6,11 @@ FROM node:alpine
 # Becomes more relevant when using Docker Compose later
 WORKDIR /app
 
-# Copies package.json to Docker environment
-COPY package.json /app
-
-# Installs all node packages
-RUN yarn install
-
 # Copies everything over to Docker environment
 COPY . /app
+
+# Installs all node packages
+RUN yarn install --frozen-lockfile
 
 # Uses port which is used by the actual application
 EXPOSE 3000
